@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.motion.widget.MotionLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +8,8 @@
     android:visibility="visible"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".DetailActivity"
-    tools:showIn="@layout/activity_detail">
+    tools:showIn="@layout/activity_detail"
+    app:layoutDescription="@xml/content_detail_scene">
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -51,6 +52,7 @@
 
 
     <LinearLayout
+        android:id="@+id/layout_holder"
         android:layout_width="387dp"
         android:layout_height="75dp"
         android:layout_marginTop="92dp"
@@ -64,19 +66,19 @@
             android:id="@+id/status_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
-            android:textAlignment="center"
+            android:layout_weight="1"
             android:text="@string/status_label"
+            android:textAlignment="center"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/status_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:textSize="24sp"
-            android:layout_gravity="center"
             android:textStyle="bold"
             tools:text="Success" />
     </LinearLayout>
@@ -91,4 +93,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
