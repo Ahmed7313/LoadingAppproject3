@@ -4,6 +4,10 @@
 
   *This is a custom application built and reviewed by Udacity Android Nanodegree Programmer experts.*
   
+
+https://user-images.githubusercontent.com/35776251/159116604-96b6ac8d-f0ae-46ce-8112-cc4c71b77592.mp4
+
+
   ## Feature
   
   - Kotlin Coroutine for async operations
